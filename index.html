@@ -6,7 +6,10 @@
 <title>Dear Santa</title>
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
-<link rel="manifest" href="manifest.json">
+<link id="manifestLink" rel="manifest" href="manifest.json">
+<script>
+(function(){var v=new URLSearchParams(location.search).get('view');var l=document.getElementById('manifestLink');if(v==='collins')l.href='manifest-collins.json';else if(v==='family')l.href='manifest-family.json';})();
+</script>
 <meta name="theme-color" content="#b91c3b">
 <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
